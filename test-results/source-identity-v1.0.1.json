@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-AG-030",
+  "repository_name": "edu-consultant-conversation-qa-agent",
+  "version": "1.0.1",
+  "tested_source_commit": "183837796557da96a75b4c248cb4b242bfc84a42",
+  "tested_source_tree_sha": "dabdaaeb1c8625280ad34c998e6dfc2cd22a067f",
+  "package_path": "dist/edu-consultant-conversation-qa-agent-v1.0.1.zip",
+  "package_sha256": "F35AFF5F18B533199B4E591FA815A51ACA9762CEE78F64CD7B5F59DF633F571B",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 63,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": "Education AI Tools Maintainers"
+}
