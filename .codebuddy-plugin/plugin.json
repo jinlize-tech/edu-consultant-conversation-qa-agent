@@ -1,0 +1,63 @@
+{
+  "name": "edu-consultant-conversation-qa-agent",
+  "version": "1.0.0",
+  "description": "A multi-step education agent for Education Consultant Conversation QA.",
+  "author": {
+    "name": "广州金励泽科技服务有限公司",
+    "email": "270911570+yangsongbaofu-dot@users.noreply.github.com"
+  },
+  "agents": [
+    "./agents/edu-consultant-conversation-qa-agent.md"
+  ],
+  "expertType": "agent",
+  "agentName": "edu-consultant-conversation-qa-agent",
+  "displayName": {
+    "en": "Education Consultant Conversation QA",
+    "zh": "课程顾问沟通质检"
+  },
+  "profession": {
+    "en": "Education Consultant Conversation QA",
+    "zh": "课程顾问沟通质检"
+  },
+  "displayDescription": {
+    "en": "Multi-step professional workflow for Education Consultant Conversation QA.",
+    "zh": "对授权、脱敏的沟通记录按需求识别、信息真实性、异议处理、承诺边界和下一步质量做复核与辅导。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Help me complete Education Consultant Conversation QA.",
+    "zh": "请帮我完成一次课程顾问沟通质检"
+  },
+  "plugin": "edu-consultant-conversation-qa-agent",
+  "tags": [
+    {
+      "en": "Education",
+      "zh": "教培机构"
+    },
+    {
+      "en": "Professional Workflow",
+      "zh": "专业工作流"
+    },
+    {
+      "en": "Education Consultant Conversation QA",
+      "zh": "课程顾问沟通质检"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me complete Education Consultant Conversation QA.",
+      "zh": "请帮我完成一次课程顾问沟通质检"
+    },
+    {
+      "en": "Start with scope and evidence inventory.",
+      "zh": "请先确认范围并盘点资料"
+    },
+    {
+      "en": "Generate the final deliverables with risks and open questions.",
+      "zh": "请生成最终成果，并列出风险与待确认事项"
+    }
+  ],
+  "homepage": "https://github.com/jinlize-tech/edu-consultant-conversation-qa-agent",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,113 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-AG-030",
+  "product_name": "课程顾问沟通质检",
+  "product_type": "Agent",
+  "repository_name": "edu-consultant-conversation-qa-agent",
+  "repository_url": "https://github.com/jinlize-tech/edu-consultant-conversation-qa-agent",
+  "product_version": "1.0.0",
+  "batch": 3,
+  "business_category": "14 客户洞察与渠道运营中心",
+  "high_risk": true,
+  "deterministic": false,
+  "agent": true,
+  "core_outputs": [
+    "沟通质检报告",
+    "证据片段",
+    "风险承诺"
+  ],
+  "optional_outputs": [
+    "需求缺口",
+    "辅导要点",
+    "团队趋势和复测记录"
+  ],
+  "all_outputs": [
+    "沟通质检报告",
+    "证据片段",
+    "风险承诺",
+    "需求缺口",
+    "辅导要点",
+    "团队趋势和复测记录"
+  ],
+  "human_review_required": true,
+  "reviewer_role": "销售主管/校区负责人/合规人员",
+  "commercial_boundary": {
+    "other_product": "教培销冠陪练专家",
+    "allowed": "对用户已取得授权的真实课程顾问沟通记录做事实、承诺、需求识别和流程质量审查。",
+    "forbidden": "不得提供销售模拟、AI家长角色扮演、销售对抗训练、能力评分课程或复制任何商业专家提示词及素材。"
+  },
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "conversation_transcripts_redacted",
+    "authorization_status",
+    "course_and_price",
+    "consultant_stage",
+    "sales_policy",
+    "prohibited_claims",
+    "review_period"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "conversation_transcripts_redacted": {
+      "type": "array"
+    },
+    "authorization_status": {
+      "type": "string"
+    },
+    "course_and_price": {
+      "type": "string"
+    },
+    "consultant_stage": {
+      "type": "string"
+    },
+    "sales_policy": {
+      "type": "string"
+    },
+    "prohibited_claims": {
+      "type": "array"
+    },
+    "review_period": {
+      "type": "string"
+    },
+    "resume_mode": {
+      "type": "string",
+      "enum": [
+        "new",
+        "resume",
+        "target_change",
+        "stage_rollback"
+      ],
+      "default": "new"
+    },
+    "agent_state": {
+      "type": "object"
+    }
+  },
+  "expected_scenario_count": 14,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

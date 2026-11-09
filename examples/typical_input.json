@@ -1,0 +1,18 @@
+{
+  "contract_version": "1.2.0",
+  "data_status": "confirmed",
+  "contains_sensitive_data": false,
+  "requested_output_language": "zh-CN",
+  "conversation_transcripts_redacted": [
+    {}
+  ],
+  "authorization_status": "已取得明确授权并完成脱敏",
+  "course_and_price": "课程与价格已核对（脱敏示例）",
+  "consultant_stage": "沟通阶段已核对（脱敏示例）",
+  "sales_policy": "销售规范已核对（脱敏示例）",
+  "prohibited_claims": [
+    {}
+  ],
+  "review_period": "质检周期已核对（脱敏示例）",
+  "resume_mode": "new"
+}

@@ -1,0 +1,31 @@
+{
+  "number": 30,
+  "product_id": "JLZ-EDU-AG-030",
+  "candidate_id": "CAND-046",
+  "chinese_name": "课程顾问沟通质检",
+  "english_name": "Education Consultant Conversation QA",
+  "repository_name": "edu-consultant-conversation-qa-agent",
+  "repository_url": "https://github.com/jinlize-tech/edu-consultant-conversation-qa-agent",
+  "product_type": "Agent",
+  "category": "14 客户洞察与渠道运营中心",
+  "batch": 3,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "沟通质检报告",
+    "证据片段",
+    "风险承诺"
+  ],
+  "optional_outputs": [
+    "需求缺口",
+    "辅导要点",
+    "团队趋势和复测记录"
+  ],
+  "high_risk": true,
+  "deterministic": false,
+  "scenario_count": 14,
+  "package_path": "dist/edu-consultant-conversation-qa-agent-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}

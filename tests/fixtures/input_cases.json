@@ -1,0 +1,176 @@
+{
+  "cases": [
+    {
+      "case_id": "normal_complete",
+      "expected_status": "READY_FOR_PROCESSING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": [
+          {}
+        ],
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "missing_required",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "invalid_type",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": 123,
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "unconfirmed",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "unconfirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": [
+          {}
+        ],
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "partial_confirmation",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "partially_confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": [
+          {}
+        ],
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "sensitive_marked",
+      "expected_status": "READY_WITH_PRIVACY_WARNING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": true,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": [
+          {}
+        ],
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new"
+      }
+    },
+    {
+      "case_id": "undeclared_field",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": [
+          {}
+        ],
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "new",
+        "未声明字段": "不应被接受"
+      }
+    },
+    {
+      "case_id": "resume_without_state",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "conversation_transcripts_redacted": [
+          {}
+        ],
+        "authorization_status": "已取得明确授权并完成脱敏",
+        "course_and_price": "课程与价格已核对（脱敏示例）",
+        "consultant_stage": "沟通阶段已核对（脱敏示例）",
+        "sales_policy": "销售规范已核对（脱敏示例）",
+        "prohibited_claims": [
+          {}
+        ],
+        "review_period": "质检周期已核对（脱敏示例）",
+        "resume_mode": "resume"
+      }
+    }
+  ]
+}
